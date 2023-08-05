@@ -1,0 +1,433 @@
+/**
+ * Zenflare
+ *
+ * Zenflare is a stripped-down version of Zenburn, a syntax-highlighting theme
+ * designed by [Jani Nurminen].
+ *
+ * It is compatible with [Jekyll], [Rouge], and [Pygments].
+ *
+ * [Jani Nurminen]: https://kippura.org/zenburnpage
+ * [Jekyll]: https://jekyllrb.com
+ * [Rouge]: https://github.com/rouge-ruby/rouge
+ * [Pygments]: https://pygments.org
+ */
+
+/* Color palette */
+.highlight {
+  --red: #cc9393;
+  --orange: #e3ceab;
+  --yellow: #dfdfbf;
+  --green: #7f9f7f;
+  --blue: #8cd0d3;
+  --white: #dcdccc;
+  --gray: #989890;
+
+  --bg: #3f3f3f;
+  --bg-dark: #303030;
+  --bg-lite: #5f5f5f;
+}
+
+/* Container */
+.highlight {
+  background: var(--bg);
+  color: var(--white);
+}
+
+/* Text selection */
+.highlight ::selection {
+  background: var(--bg-lite);
+}
+
+/* Highlighted line */
+.highlight .hll {
+  background: var(--bg-dark);
+}
+
+/* Line numbers */
+.highlight .linenos {
+  color: var(--gray);
+}
+
+/** COMMENTS ******************************************************************/
+
+/* Comment */
+.highlight .c {
+  color: var(--green);
+}
+
+/* Comment.Multiline */
+.highlight .cm {
+  color: var(--green);
+}
+
+/* Comment.Preproc */
+.highlight .cp {
+  color: var(--green);
+}
+
+/* Comment.Single */
+.highlight .c1 {
+  color: var(--green);
+}
+
+/* Comment.Special */
+.highlight .cs {
+  color: var(--green);
+  font-weight: bold;
+}
+
+/** ERRORS ********************************************************************/
+
+.highlight .err, /* Error */
+.highlight .gr /* Generic.Error */ {
+  background-position: 0 95%;
+  background-size: 8px 2px;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(
+      45deg,
+      transparent 65%,
+      var(--red) 80%,
+      transparent 90%
+    ),
+    linear-gradient(135deg, transparent 5%, var(--red) 15%, transparent 25%),
+    linear-gradient(135deg, transparent 45%, var(--red) 55%, transparent 65%),
+    linear-gradient(45deg, transparent 25%, var(--red) 35%, transparent 50%);
+  color: var(--white);
+}
+
+/** GENERICS ******************************************************************/
+
+/* Generic */
+.highlight .g {
+  color: var(--white);
+}
+
+/* Generic.Deleted */
+.highlight .gd {
+  color: var(--white);
+  background: rgba(255, 0, 0, 0.1);
+}
+
+/* Generic.Emph */
+.highlight .ge {
+  color: var(--white);
+  font-style: italic;
+}
+
+/* Generic.Heading */
+.highlight .gh {
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* Generic.Inserted */
+.highlight .gi {
+  background: rgba(0, 255, 0, 0.1);
+  color: var(--white);
+}
+
+/* Generic.Output */
+.highlight .go {
+  color: var(--white);
+}
+
+/* Generic.Prompt */
+.highlight .gp {
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+.highlight .gs {
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* Generic.Subheading */
+.highlight .gu {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+/* Generic.Traceback */
+.highlight .gt {
+  color: var(--gray);
+}
+
+/** KEYWORDS ******************************************************************/
+
+/* Keyword */
+.highlight .k {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+.highlight .kc {
+  color: var(--red);
+  font-weight: bold;
+}
+
+/* Keyword.Declaration */
+.highlight .kd {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/* Keyword.Namespace */
+.highlight .kn {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+/* Keyword.Pseudo */
+.highlight .kp {
+  color: var(--red);
+  font-weight: bold;
+}
+
+/* Keyword.Reserved */
+.highlight .kr {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+.highlight .kt {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/** LITERALS ******************************************************************/
+
+/* Literal */
+.highlight .l {
+  color: var(--white);
+}
+
+/* Literal.Date */
+.highlight .ld {
+  color: var(--red);
+}
+
+/* Literal.Number */
+.highlight .m {
+  color: var(--blue);
+}
+
+/* Literal.Number.Float */
+.highlight .mf {
+  color: var(--blue);
+}
+
+/* Literal.Number.Hex */
+.highlight .mh {
+  color: var(--blue);
+}
+
+/* Literal.Number.Integer */
+.highlight .mi {
+  color: var(--blue);
+}
+
+/* Literal.Number.Integer.Long */
+.highlight .il {
+  color: var(--blue);
+}
+
+/* Literal.Number.Oct */
+.highlight .mo {
+  color: var(--blue);
+}
+
+/* Literal.String */
+.highlight .s {
+  color: var(--red);
+}
+
+/* Literal.String.Backtick */
+.highlight .sb {
+  color: var(--red);
+}
+
+/* Literal.String.Char */
+.highlight .sc {
+  color: var(--red);
+}
+
+/* Literal.String.Doc */
+.highlight .sd {
+  color: var(--red);
+}
+
+/* Literal.String.Double */
+.highlight .s2 {
+  color: var(--red);
+}
+
+/* Literal.String.Escape */
+.highlight .se {
+  color: var(--red);
+}
+
+/* Literal.String.Heredoc */
+.highlight .sh {
+  color: var(--red);
+}
+
+/* Literal.String.Interpol */
+.highlight .si {
+  color: var(--white);
+}
+
+/* Literal.String.Other */
+.highlight .sx {
+  color: var(--red);
+}
+
+/* Literal.String.Regex */
+.highlight .sr {
+  color: var(--red);
+}
+
+/* Literal.String.Single */
+.highlight .s1 {
+  color: var(--red);
+}
+
+/* Literal.String.Symbol */
+.highlight .ss {
+  color: var(--red);
+}
+
+/** NAMES *********************************************************************/
+
+/* Name */
+.highlight .n {
+  color: var(--white);
+}
+
+/* Name.Attribute */
+.highlight .na {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/* Name.Builtin */
+.highlight .nb {
+  color: var(--white);
+}
+
+/* Name.Builtin.Pseudo */
+.highlight .bp {
+  color: var(--white);
+}
+
+/* Name.Class */
+.highlight .nc {
+  color: var(--white);
+}
+
+/* Name.Constant */
+.highlight .no {
+  color: var(--white);
+}
+
+/* Name.Decorator */
+.highlight .nd {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/* Name.Entity */
+.highlight .ni {
+  color: var(--red);
+  font-weight: bold;
+}
+
+/* Name.Exception */
+.highlight .ne {
+  color: var(--white);
+}
+
+/* Name.Function */
+.highlight .nf {
+  color: var(--white);
+}
+
+/* Name.Label */
+.highlight .nl {
+  color: var(--white);
+}
+
+/* Name.Namespace */
+.highlight .nn {
+  color: var(--white);
+}
+
+/* Name.Other */
+.highlight .nx {
+  color: var(--white);
+}
+
+/* Name.Property */
+.highlight .py {
+  color: var(--white);
+}
+
+/* Name.Tag */
+.highlight .nt {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+/* Name.Variable */
+.highlight .nv {
+  color: var(--white);
+}
+
+/* Name.Variable.Class */
+.highlight .vc {
+  color: var(--white);
+}
+
+/* Name.Variable.Global */
+.highlight .vg {
+  color: var(--white);
+}
+
+/* Name.Variable.Instance */
+.highlight .vi {
+  color: var(--white);
+}
+
+/** OPERATORS *****************************************************************/
+
+/* Operator */
+.highlight .o {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/* Operator.Word */
+.highlight .ow {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+/** OTHER *************************************************************************/
+
+/* Other */
+.highlight .x {
+  color: var(--white);
+}
+
+/* Punctuation */
+.highlight .p {
+  color: var(--white);
+}
+
+/* Text.Whitespace */
+.highlight .w {
+  color: var(--white);
+}
