@@ -9,4 +9,4 @@ It is compatible with [Jekyll], [Rouge], and [Pygments].
 [Rouge]: https://github.com/rouge-ruby/rouge
 [Pygments]: https://pygments.org
 
-![zenflare](https://github.com/Awjin/zenflare/assets/3211874/5e55960c-5f12-44b4-a2aa-fc013dbb9e3f)
+<img width="440" alt="zenflare" src="https://github.com/Awjin/zenflare/assets/3211874/8a4915a2-e0a0-4b06-ac24-01e3dd75b3f1">
